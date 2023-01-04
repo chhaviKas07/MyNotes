@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c_project_9.css">
+    <link rel="stylesheet" href="../Project_7/c_project_7_uti.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Notes</title>
+</head>
+
+<body>
+    <nav class="navbar maxw1 marg marg2 ">
+        <div class="nav-left">
+            <ul>
+                <span>Notes</span>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="./search.html" method="get">
+                <input id="searchTxt" class="form-input" type="text" name="query" placeholder="Search Notes">
+                <button class="btn">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="maxw1 marg">
+        <hr>
+    </div>
+
+    <div class="container my-3">
+        <h1>Welcome To Magic Notes</h1>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <h5 class="card-title">Add title</h5>
+                    <input type="text" class="form-control" id="addTitle" aria-describedby="title"
+                        placeholder="Enter title">
+                </div>
+                <h5 class="card-title">Add a note</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBtn">Add Note</button>
+            </div>
+        </div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <div id="notes" class="row container-fluid"> </div>
+    </div>
+
+    <script src="./c_project_9.js"></script>
+</body>
+
+</html>
